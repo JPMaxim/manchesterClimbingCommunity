@@ -1,0 +1,169 @@
+/* -----------------------------------------------------
+  SUB-NAV
+----------------------------------------------------- */
+.subNav {
+    min-height: 30px;
+    background-color: #1f4484;
+}
+
+/* subNav container */
+.subNavContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    overflow: hidden;  
+    padding: 10px 5% 10px 5%;
+    /* responsive */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ /* Sub links Container*/
+.newsNavLinksContainer {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;  
+    justify-content: end;
+    align-items: center;
+}
+/*subnav p*/
+.subNavContainer > p {
+    margin: 0;
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+}
+/* style the links */
+.newsNavLinksContainer > a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/*Change color on hover */
+.newsNavLinksContainer > a:hover {
+    color: orange;
+}
+
+
+/* -----------------------------------------------------
+  MAIN
+----------------------------------------------------- */
+main > h1 {
+    font-size: 30pt;
+    padding: 10px;
+}
+/* Grid container */
+.articleGridContainer {
+    display: grid;
+    gap: 10px;
+    /*12 rows with a 2 row gap to seperate nav*/
+    grid-template-columns: repeat(14, 1fr);
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------------------- grid layout ---------------------- */
+.article1 { /*row1 col1-3*/
+    grid-area: 1 / 1 / 2 / 4;
+    padding: 10px;
+    min-height: 00px;   
+}
+
+.article2 { /*row1 col4-6*/
+    grid-area: 1 / 4 / 2 / 7;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article3 { /*row1 col7-9*/
+    grid-area: 1 / 7 / 2 / 10;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article4 { /*row2 col1-3*/
+    grid-area: 2 / 1 / 3 / 4;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article5 { /*row2 col4-6*/
+    grid-area: 2 / 4 / 3 / 7;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article6 { /*row2 col7-9*/
+    grid-area: 2 / 7 / 3 / 10;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article7 { /*row3 col1-3*/
+    grid-area: 3 / 1 / 4 / 4;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article8 { /*row3 col4-6*/
+    grid-area: 3 / 4 / 4 / 7;
+    padding: 10px;
+    min-height: 200px;    
+}
+.article9 {/*row3 col7-9*/
+    grid-area: 3 / 7 / 4 / 10;
+    padding: 10px;
+    min-height: 200px; 
+}
+
+/* article Container */
+.articleContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: start;
+}
+/*style images*/
+.articleContainer > img {
+    width: 100%;
+}
+
+/* ------------ style the aside section ------------- */
+/*grid position*/
+aside {
+    grid-area: 1 / 12 / 4 / 15;
+}
+/* flex container */
+.asideContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+}
+.asideContainer > h1 {
+    margin: 0;
+}
+
+/* grey background */
+.asideArticle {
+    width: 100%;
+    background-color: rgb(162, 183, 189);
+    border-radius: 5px;
+    min-height: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: left;
+    margin-top: 10px;
+}
+.asideArticle > .text {
+    padding: 5px;
+}
+.text > a {
+    text-decoration: none;
+    color: rgb(0, 22, 50);
+}
+.text > a:hover {
+    color: orange;
+}
+.text > a > p {
+    margin: 0;
+}
