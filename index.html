@@ -2,8 +2,11 @@
 <html lang="en-gb">
 <head>
 	<title>Home - Manchester Climbing Community</title>
-	<!-- stylesheet -->
+
+	<!-- stylesheets -->
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="news.css">
+
 	<!-- icon -->
 	<link rel="icon" type="image/png" href="siteicon.png">
 	<meta charset="utf-8">
@@ -32,14 +35,29 @@
 
 				<!-- nav links -->
 				<div id="navLinks">
-					<a href="index.html">Home</a>
-					<a href="news_mostRecent.html">News</a>
-					<a href="events.html">Events</a>
-					<a href="discussion.html">Discussion</a>
-					<a href="indoors.html">Indoors</a>
-					<a href="outdoors.html">Outdoors</a>
-					<a href="newClimbers.html">New Climbers</a>
-					<a href="contact.html">Contact</a>
+
+					<div class="lineContainer">
+						<a href="index.html">Home</a>
+						<div class="line" style="z-index: 1; width: 80%;"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="news_mostRecent.html">News</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="quiz.html">Quiz</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="sustainability.html">Sustainability</a>
+						<div class="line"></div>
+					</div>
+
+					<!--Ideas for future pages: Events, Discussion, Indoors, Outdoors, NewClimbers, Contact-->
+
 				</div>
 
 			</div>
@@ -53,9 +71,13 @@
 		------------------------------------------------------>
 		<section>
 
-			<div class="hero">
-				<h1>Manchester Climbing Community</h1>
-				<h2>For Climbers in and around Manchester</h2>
+			<div class="heroBack">
+
+				<div class="hero">
+					<h1>Manchester Climbing Community</h1>
+					<h2>For Climbers in and around Manchester</h2>
+				</div>
+
 			</div>
 
 		</section>
@@ -64,39 +86,94 @@
 			MAIN GRID SECTION - 12 columns
 		------------------------------------------------------>
 
-		<div class="gridContainer">
+        <div style="background-color: #9ecfd2;"><!--aestestic div for curved background-->
 
-			<!---------------------WHAT IS MCC?--------------------->
-			<section class="gridItem1">
-				<h2>What is MCC?</h2>
-				<p>Manchester Climbing Community is a website for climbers in and around Manchester. Catch up on the latest news. Meet new climbers and organise climbing sessions. Find upcoming climbing events. Discover new crags and gyms around Manchester. Share your efforts or even get some much needed beta for a project. MCC is the place.</p>
-			</section>
+            <div class="gridContainer1">
 
-			<!-- img Row 1 -->
-			<div class="gridItem2">
-				<img src="mike-kotsch.jpg">
-			</div>
+                <!---------------------WHAT IS MCC?--------------------->
+                <section class="gridItem1">
+                    <h2>What is MCC?</h2>
+                    <p>Manchester Climbing Community is a website for climbers in and around Manchester. Catch up on the latest news. Meet new climbers and organise climbing sessions. Find upcoming climbing events. Discover new crags and gyms around Manchester. Share your efforts or even get some much needed beta for a project. MCC is the place.</p>
+                </section>
 
-			<!-- img row 2 -->
-			<div class="gridItem3">
-				<img src="greg-rosenke.jpg">
-			</div>
+                <!-- img Row 1 -->
+                <div class="gridItem2">
+                    <img src="mike-kotsch.jpg">
+                </div>
 
-			<!-------------------WHO IS MCC FOR?------------------->
-			<section class="gridItem4">
-				<h2>Who is MCC for?</h2>
-				<p>Seasoned professional or complete newbie there is hopefully something here for everyone. Maybe you're looking for a climbing partner, wondering what climbing even is or how to get involved, or just want to try a new spot and want to see what looks good. MCC is for anybody interested in Manchester climbing to whatever extent.</p>
-			</section>
+                <!-- img row 2 -->
+                <div class="gridItem3">
+                    <img src="greg-rosenke.jpg">
+                </div>
 
-			<!------------------------NEWS------------------------>
-			<aside class="gridItem5">
-				<h2>News</h2>
-				<p>Article</p>
-				<p>Article</p>
-				<button>
-					<a href="news.html">See more</a>
-				</button>
-			</aside>
+                <!-------------------WHO IS MCC FOR?------------------->
+                <section class="gridItem4">
+                    <h2>Who is MCC for?</h2>
+                    <p>Seasoned professional or complete newbie there is hopefully something here for everyone. Maybe you're looking for a climbing partner, wondering what climbing even is or how to get involved, or just want to try a new spot and want to see what looks good. MCC is for anybody interested in Manchester climbing to whatever extent.</p>
+                </section>
+
+                <!------------------------NEWS------------------------>
+                <aside class="gridItem5">
+                    <div class="newsFlexContainer">
+
+                        <a href="news_mostRecent.html">
+                            <h2>News</h2>
+                        </a>
+
+                        <div class="asideArticle">
+                            <div class="text">
+                                <a href="article_blocOnLeagueLaunchParty.html">
+                                    <p>BlocHaus Climbing - Bloc On League Launch Party</p>
+                                </a>
+                            </div>
+                            <div class="newsImg">
+                                <a href="article_blocOnLeagueLaunchParty.html">
+                                    <img src="blocHaus.jpg" alt="BlocHaus Img">
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        <div class="asideArticle">
+                            <div class="text">
+                                <a href="article_bmcOutdoorCourse.html">
+                                    <p>Team BMC - Dates for Outdoor Sport/Trad Courses</p>
+                                </a>
+                            </div>
+                            <div class="newsImg">
+                                <a href="article_bmcOutdoorCourse.html">
+                                    <img src="bmc.jpg" alt="BMC Img">
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        <div class="asideArticle">
+                            <div class="text">
+                                <a href="article_bern2023Men.html">
+                                    <p>World Championships 2023 Mens Boulder Final Results</p>
+                                </a>
+                            </div>
+                            <div class="newsImg">
+                                <a href="article_bern2023Men.html">
+                                    <img src="bernM.webp" alt="World Cup Podium Img">
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        <button>
+                            <a href="news.html">See more News</a>
+                        </button>
+
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+
+        <div class="gridContainer2">
 
 			<!-----------------------OUTDOORS----------------------->
 			<section class="gridItem6">
@@ -128,28 +205,36 @@
 
 			<!-----------------------EVENTS----------------------->
 			<section class="gridItem9">
+
 				<h2>Events</h2>
+
 				<ul>
 					<li>Event 1</li>
 					<li>Event 2</li>
 					<li>Event 3</li>
-					<button>
-						<a href="events.html">See more</a>
-					</button>
 				</ul>
+
+				<button>
+					<a href="events.html">See more</a>
+				</button>
+
 			</section>
 
 			<!---------------------DISCUSSION--------------------->
 			<section class="gridItem10">
+
 				<h2>Discussion</h2>
+
 				<ul>
 					<li>Thread 1</li>
 					<li>Thread 2</li>
 					<li>Thread 3</li>
-					<button>
-						<a href="discussion.html">See more</a>
-					</button>
 				</ul>
+
+				<button>
+					<a href="discussion.html">See more</a>
+				</button>
+				
 			</section>
 
 			<!-----------------------CONTACT----------------------->
@@ -171,29 +256,15 @@
 
 	<footer>
 		<div class="footerContainer">
-			<p>Site By Jonathan Maxim</p>
-			<p>Attributions</p>
 
-			<!-- attributions:
+			<p>Site By Jonathan Maxim 2023</p>
 
-			<a href="https://www.flaticon.com/free-icons/climbing-wall" title="climbing wall icons">Climbing wall icons created by Freepik - Flaticon</a> 
+            <a href="attributions.html">
+                <p>Attributions</p>
+            </a>
 
-			Photo by <a href="https://unsplash.com/@ynsplt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">yns plt</a> on <a href="https://unsplash.com/photos/NY1D4Zni7fc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-			Photo by <a href="https://unsplash.com/@speckfechta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">x )</a> on <a href="https://unsplash.com/photos/N4QTBfNQ8Nk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-			Photo by <a href="https://unsplash.com/@seanbenesh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sean Benesh</a> on <a href="https://unsplash.com/photos/VnmbcgAfL3Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-			Photo by <a href="https://unsplash.com/@mike?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Kotsch</a> on <a href="https://unsplash.com/photos/A9dNMBX9Zm4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-			Photo by <a href="https://unsplash.com/@greg_rosenke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Greg Rosenke</a> on <a href="https://unsplash.com/photos/pur08V635JI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-
-			-->
-
-		</div>
-  
-	</footer>
+        </div>
+    </footer>
   
 </body>
 </html>
