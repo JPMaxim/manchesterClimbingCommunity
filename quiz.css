@@ -1,0 +1,14 @@
+
+/* ----------------- Style Quiz ----------------- */
+.quiz {
+    max-width: 600px;
+    margin: 20px auto;
+}
+legend {
+    font-weight: bold;
+}
+fieldset {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: outset 3px darkgreen;
+}

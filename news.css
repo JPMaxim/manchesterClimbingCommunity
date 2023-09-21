@@ -33,7 +33,7 @@
     color: white;
 }
 /* style the links */
-.newsNavLinksContainer > a {
+.newsNavLinksContainer > .lineContainer > a {
     float: right;
     display: block;
     text-align: center;
@@ -42,9 +42,24 @@
     color: white;
 }
 
-/*Change color on hover */
-.newsNavLinksContainer > a:hover {
-    color: orange;
+/* Change color on hover for all links */
+.newsNavLinksContainer > .lineContainer > a:hover {
+    color: #9ecfd2;
+}
+
+/*Horizontal Line div for current sub-page*/
+div.subLine {
+    background-color: #9ecfd2;
+    height: 2px;
+    width: 0%;
+    margin-left: 5%;
+    z-index: -1;
+    /*animation*/
+    transition: width 0.5s ease-in;
+} 
+.newsNavLinksContainer > .lineContainer > a:hover + .subLine {
+    z-index: 1;
+    width: 90%;
 }
 
 
@@ -122,9 +137,18 @@ main > h1 {
     align-items: start;
 }
 /*style images*/
-.articleContainer > img {
+.articleContainer >  img {
     width: 100%;
 }
+.articleContainer > a > img {
+    width: 100%;
+}
+/*style headings*/
+.articleContainer > a {
+    text-decoration: none;
+    color: rgb(0, 22, 50);
+}
+
 
 /* ------------ style the aside section ------------- */
 /*grid position*/
@@ -137,9 +161,6 @@ aside {
     flex-flow: column wrap;
     justify-content: start;
     align-items: center;
-}
-.asideContainer > h1 {
-    margin: 0;
 }
 
 /* grey background */
@@ -154,7 +175,12 @@ aside {
     align-items: left;
     margin-top: 10px;
 }
-.asideArticle > .text {
+/*image for index*/
+.newsImg > a > img {
+    width:100%;
+}
+
+.asideArticle > .text, .asideArticle > .newsImg {
     padding: 5px;
 }
 .text > a {

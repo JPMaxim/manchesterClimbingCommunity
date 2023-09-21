@@ -36,7 +36,7 @@ header {
 }
 
 /* logo container */
-#navLogo {
+.navLogo {
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
@@ -44,7 +44,7 @@ header {
 }
 
 /* links container */
-#navLinks {
+.navLinks {
   display: flex;
   flex-flow: row wrap;
   justify-content: end;
@@ -52,7 +52,7 @@ header {
 }
 
 /* Style the links */
-#navLinks > a {
+.navLinks > .lineContainer > a {
   float: left;
   display: block;
   text-align: center;
@@ -61,20 +61,51 @@ header {
   color: white;
 }
 
-/* Change color on hover for all links */
-#navLinks > a:hover {
-  color: orange;
+/* Change color on hover for links */
+.navLinks > .lineContainer > a:hover {
+  color: #9ecfd2;
 }
 
-/*News Dropdown Menu*/
+/*Horizontal Line div for current page*/
+div.line {
+  background-color: #9ecfd2;
+  height: 2px;
+  width: 0%;
+  margin-left: 10%;
+  z-index: -1;
+  /*animation*/
+  transition: width 0.5s ease-in;
+} 
+.lineContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+}
+.navLinks > .lineContainer > a:hover + .line {
+  z-index: 1;
+  width: 80%;
+}
 
+/* ------------------ RESPONSIVE ------------------ */
+@media screen and (max-width: 600px) {
+  #navLinks {
+    max-width: 50%;
+  }
+  
+}
 
 /* -----------------------------------------------------
   HERO
 ----------------------------------------------------- */
 
+/*behind Container*/
+.heroBack {
+  background-color: #9ecfd2;
+}
+
 /* hero container */
-.hero {
+.heroBack > .hero {
   height: 80vh;
   /* background img */
   background-image: url("ynsplt.jpg");
@@ -87,15 +118,16 @@ header {
   /*contain text*/
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  /*temp*/
-  border: dashed 2px black;
+  /*temp
+  border: dashed 2px black;*/
 }
+
 
 .hero > h1, .hero > h2{
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: 150px 25px 20px 25px;
   font-size: 50pt;
   text-shadow: 1px 1px #bfeaed;
 }
@@ -108,77 +140,131 @@ header {
 /* -----------------------------------------------------
   MAIN GRID SECTION
 ----------------------------------------------------- */
-/* grid container */
-.gridContainer {
+
+/* grid containers */
+.gridContainer1 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(14, 1fr);
+  padding: 50px 20px;
+  border-radius: 0 150px 0 150px;
+  background-color: #bfeaed;
+}
+.gridContainer2 {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
+  padding: 50px 20px;
+  background-color: #9ecfd2;
+  border-radius: 0 150px 0 0;
 }
 
-/* grid items */
+/* GRID 1 */
 .gridItem1 { /* Row 1 Col 1-6 */
   grid-area: 1 / 1 / 2 / 7;
   padding: 10px;
-  min-height: 200px;
-  background-color: #FF0000;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+  
+  /*background-color: #FF0000;*/
 }
 .gridItem2 { /*Row 1 Col 7-9*/
   grid-area: 1 / 7 / 2 / 10;
-  min-height: 200px;
-  background-color: #ff8400;
+  /*background-color: #ff8400;*/
 }
 .gridItem3 {/*Row 2 Col 1-3*/
   grid-area: 2 / 1 / 3 / 4;
-  min-height: 200px;
-  background-color: #e1ff00;
+  /*background-color: #e1ff00;*/
 }
 .gridItem4 {/*Row 2 Col 4-9*/
   grid-area: 2 / 4 / 3 / 10;
   padding: 10px;
-  min-height: 200px;
-  background-color: #00ff22;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+  
+  /*background-color: #00ff22;*/
 }
-.gridItem5 {/*Row 1-2 Col 10-12*/
-  grid-area: 1 / 10 / 3 / 13;
+.gridItem5 {/*Row 1-2 Col 12-14*/
+  grid-area: 1 / 12 / 3 / 15;
   padding: 10px;
-  min-height: 200px;
-  background-color: #00ffd5;
+  /*background-color: #00ffd5;*/
 }
-.gridItem6 {/*Row 3 Col 1-5*/
+
+/* GRID 2 */
+
+.gridItem6 {/*Row 1 Col 1-5*/
   grid-area: 3 / 1 / 4 / 6;
   padding: 10px;
-  min-height: 200px;
-  background-color: #00a6ff;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  /*background-color: #00a6ff;*/
 }
-.gridItem7 {/*Row 3 Col 6-7*/
+.gridItem6 > h2, .gridItem6 > ul {
+    margin: 0;
+}
+
+.gridItem7 {/*Row 1 Col 6-7*/
   grid-area: 3 / 6 / 4 / 8;
-  min-height: 200px;
-  background-color: #0015ff;
+  /*background-color: #0015ff;*/
 }
-.gridItem8 {/*Row 3 Col 8-12*/
+
+.gridItem8 {/*Row 1 Col 8-12*/
   grid-area: 3 / 8 / 4 / 13;
   padding: 10px;
-  min-height: 200px;
-  background-color: #7300ff;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  /*background-color: #7300ff;*/
 }
-.gridItem9 {/*Row 4 Col 1-4*/
+.gridItem8 > h2, .gridItem8 > ul {
+    margin: 0;
+}
+
+.gridItem9 {/*Row 2 Col 1-4*/
   grid-area: 4 / 1 / 5 / 5;
   padding: 10px;
-  min-height: 200px;
-  background-color: #f700ff;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  /*background-color: #f700ff;*/
 }
-.gridItem10 {/*Row 4 Col 5-8*/
+.gridItem10 {/*Row 2 Col 5-8*/
   grid-area: 4 / 5 / 5 / 9;
   padding: 10px;
-  min-height: 200px;
-  background-color: #ffffff;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  /*background-color: #ffffff;*/
 }
-.gridItem11 {/*Row 4 Col 9-12*/
+.gridItem11 {/*Row 2 Col 9-12*/
   grid-area: 4 / 9 / 5 / 13;
   padding: 10px;
-  min-height: 200px;
-  background-color: #000000;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  /*background-color: #000000;*/
 }
 /* ------------------ Style Images ------------------ */
 .gridItem2, .gridItem3, .gridItem7 {
@@ -187,21 +273,116 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* Row 1 Img */
-.gridItem2 > img {
+/* Row 1, 2, 3 Img */
+.gridItem2 > img, .gridItem3 > img, .gridItem7 > img {
   object-fit: contain;
   overflow: hidden;
 }
-/* Row 2 Img */
-.gridItem3 > img {
-  object-fit: contain;
-  overflow: hidden;
+
+/* style buttons */
+button > a {
+  text-decoration: none;
+  color: rgb(0, 22, 50);
 }
-/* Row 3 Img */
-.gridItem7 > img {
-  object-fit: contain;
-  overflow: hidden;
+button {
+  border-radius: 5px;
+  padding: 4px;
 }
+button > a:hover {
+  color: orange;
+}
+
+
+/* ------------------ NEWS ASIDE ------------------ */
+.newsFlexContainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: center;
+}
+.newsFlexContainer > a {
+  text-decoration: none;
+  color: rgb(0, 22, 50);
+}
+.newsFlexContainer > .asideArticle {
+  background-color: #bfeaed;
+}
+
+
+/* ------------------ RESPONSIVE ------------------ */
+@media screen and (max-width: 600px) {
+
+  .gridContainer1, .gridContainer2 {
+    grid-template-columns: 1fr;
+  }
+  .gridItem1 {    
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gridItem2 {    
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .gridItem2 > img {
+    width: 80%;
+    margin: auto;
+  }  
+  
+  .gridItem3 {    
+    grid-column: 1;
+    grid-row: 3;
+    display:none;
+  }
+  .gridItem4 {    
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .gridItem5 {    
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .newsImg {
+    width:40%;
+    margin: auto;
+  }
+  .text > a > p {
+    text-align:center;
+  }
+
+  .gridItem6 {    
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gridItem7 {    
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .gridItem7 > img {
+    width: 60%;
+    margin: 40px auto;
+  }
+
+  .gridItem8 {    
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .gridItem9 {    
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .gridItem10 {    
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .gridItem11 {    
+    grid-column: 1;
+    grid-row: 6;
+  }
+}
+
 /* -----------------------------------------------------
   FOOTER
 ----------------------------------------------------- */
@@ -225,4 +406,12 @@ footer {
   display: block;
   text-align: center;
   padding: 5px 10px;
+}
+
+.footerContainer > a {
+  text-decoration: none;
+  color: white;
+}
+.footerContainer > a:hover {
+  color: orange;
 }

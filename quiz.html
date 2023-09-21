@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+<head>
+	<title>Quiz - Manchester Climbing Community</title>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="news.css">
+	<link rel="stylesheet" href="quiz.css">
+
+    <!--JavaScript-->
+	<script src="quiz.js"></script>
+
+
+	<!-- icon -->
+	<link rel="icon" type="image/png" href="siteicon.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- description -->
+	<meta name="description" content="Community Page for climbers in and around Manchester. See local climbing news, meet new people, ask questions, get into climbing.">
+	<!-- keywords -->
+	<meta name="keywords" content="manchester, stockport, peak district, climbing, bouldering, sport climbing, trad climbing, rope climbing, lead climbing, climbing gyms, climbing news, climbing events, climbing locations, climbing crags, climbing centres, climbing forum, climbing discussion, depot manchester, depot climbing, rock over climbing, blochaus climbing, awesome walls stockport, awesome walls, parthian climbing, manchester climbing centre, rope race, new mills tor, wimberry, tintwhistle knarr, black tor, hobson moor quarry, the woolpacks, derwent, stoney, stoney middleton, burbage, stanage, stanage plantation, higgar tor, froggatt, curbar, rubicon, raven tor, blackwell dale, bamford, windgather">
+	
+</head>
+
+<body>
+	<!------------------------------------------------------
+		HEADER/NAV
+	------------------------------------------------------>
+	<header>
+		<nav>
+			<div class="navContainer">
+
+				<!-- logo -->
+				<div id="navLogo">
+					<a href="index.html"><!--logo links to homepage-->
+						<img src="siteIcon.png" alt="logo" style="width: 50px;">
+					</a>
+				</div>
+
+				<!-- nav links -->
+				<div class="navLinks">
+
+					<div class="lineContainer">
+						<a href="index.html">Home</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="news_mostRecent.html">News</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="quiz.html">Quiz</a>
+						<div class="line" style="z-index: 1; width: 80%;"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="sustainability.html">Sustainability</a>
+						<div class="line"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</nav>
+	</header>	
+
+	<main>
+
+		<!------------------------------------------------------
+			QUIZ
+		------------------------------------------------------>
+
+        <section class="quiz">
+
+            <h1>Quiz</h1>
+
+            <form name="quiz">
+
+    <!-- Question 1-->
+                <fieldset><!--semantic tag for question and answer-->
+                    <legend><!--semantic tag for question-->
+                        You can set a problem using ONLY ONE type of hold. What do you choose?
+                    </legend>
+
+                    <!--inputs having the same name means that JS knows they are in the same group and will group them together, it also means you can only select one of them-->
+                    <input type="radio" name="hold" id="jug" value="jug">
+                    <label for="jug">Jug</label>
+                    <br>
+
+                    <input type="radio" name="hold" id="crimp" value="crimp">
+                    <label for="crimp">Crimp</label>
+                    <br>
+
+                    <input type="radio" name="hold" id="sloper" value="sloper">
+                    <label for="sloper">Sloper</label>
+                    <br>
+
+                    <input type="radio" name="hold" id="pocket" value="pocket">
+                    <label for="pocket">Pocket</label>
+                    <br>
+
+
+                </fieldset>
+
+    <!-- Question 2-->
+                <fieldset>
+
+                    <legend>
+                        What's your favourite kind of climbing?
+                    </legend>
+
+                    <input type="radio" name="climbing" id="bouldering" value="bouldering">
+                    <label for="bouldering">Bouldering</label>
+                    <br>
+
+                    <input type="radio" name="climbing" id="sport" value="sport">
+                    <label for="sport">Sport</label>
+                    <br>
+
+                    <input type="radio" name="climbing" id="trad" value="trad">
+                    <label for="trad">Trad</label>
+                    <br>
+
+                    <input type="radio" name="climbing" id="freeSolo" value="freeSolo">
+                    <label for="freeSolo">Free Solo</label>
+                    <br>
+
+
+                </fieldset>
+
+    <!-- Question 3-->
+                <fieldset>
+
+                    <legend>
+                        Earphones in at the gym. Which one of these are you listening to?
+                    </legend>
+
+                    <input type="radio" name="music" id="rock" value="rock">
+                    <label for="rock">Rock</label>
+                    <br>
+
+                    <input type="radio" name="music" id="funk" value="funk">
+                    <label for="funk">Funk</label>
+                    <br>
+
+                    <input type="radio" name="music" id="jazz" value="jazz">
+                    <label for="jazz">Jazz</label>
+                    <br>
+
+                    <input type="radio" name="music" id="pop" value="pop">
+                    <label for="pop">Pop</label>
+                    <br>
+
+
+                </fieldset>
+
+    <!-- Question 4-->
+                <fieldset>
+
+                    <legend>
+                        How many of these Manchester climbing centres have you been to?
+                    </legend>
+
+                    <input type="checkbox" name="centre" id="depot" value="depot">
+                    <label for="depot">Depot Manchester</label>
+
+                    <br>
+
+                    <input type="checkbox" name="centre" id="bloc" value="bloc">
+                    <label for="bloc">BlocHaus</label>
+
+                    <br>
+
+                    <input type="checkbox" name="centre" id="rockOver" value="rockOver">
+                    <label for="rockOver">RockOver</label>
+
+                    <br>
+
+                    <input type="checkbox" name="centre" id="parthian" value="parthian">
+                    <label for="parthian">Parthian</label>
+
+                    <br>
+
+                    <input type="checkbox" name="centre" id="aw" value="aw">
+                    <label for="aw">Awesome Walls</label>
+
+                    <br>
+
+                    <input type="checkbox" name="centre" id="rope" value="rope">
+                    <label for="rope">Rope Race</label>
+
+                </fieldset> 
+
+
+    <!-- Question 5-->
+                <fieldset>
+
+                    <legend>
+                        How much do you enjoy...
+                    </legend>
+
+                    <input type="range" name="enjoy" id="beta" value="beta">
+                    <label for="beta">Finding a beta that makes a move way easier</label>
+
+                    <br>
+
+                    <input type="range" name="enjoy" id="slip" value="slip">
+                    <label for="slip">Your foot slipping on slab</label>
+
+                    <br>
+
+                    <input type="range" name="enjoy" id="dyno" value="dyno">
+                    <label for="dyno">Paddle dynos</label>
+
+                    <br>
+
+                    <input type="range" name="enjoy" id="crack" value="crack">
+                    <label for="crack">Crack climbing</label>
+
+                </fieldset>
+
+                <button type="button" onclick="checkAnswers()">Submit</button>
+
+            </form>
+
+        </section>
+        
+
+	</main>	
+
+	<!---------------------------------------------------------
+		FOOTER
+	--------------------------------------------------------->
+
+	<footer>
+		<div class="footerContainer">
+
+			<p>Site By Jonathan Maxim</p>
+
+            <a href="attributions.html">
+                <p>Attributions</p>
+            </a>
+
+        </div>
+    </footer>
+  
+</body>
+</html>

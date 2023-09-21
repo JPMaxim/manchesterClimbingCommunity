@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+<head>
+	<title>Sustainability - Manchester Climbing Community</title>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="sustainability.css">
+
+	<!-- JavaScript -->
+	<script src="sustainability.js"></script>
+
+	<!-- icon -->
+	<link rel="icon" type="image/png" href="siteicon.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- description -->
+	<meta name="description" content="Community Page for climbers in and around Manchester. See local climbing news, meet new people, ask questions, get into climbing.">
+	<!-- keywords -->
+	<meta name="keywords" content="manchester, stockport, peak district, climbing, bouldering, sport climbing, trad climbing, rope climbing, lead climbing, climbing gyms, climbing news, climbing events, climbing locations, climbing crags, climbing centres, climbing forum, climbing discussion, depot manchester, depot climbing, rock over climbing, blochaus climbing, awesome walls stockport, awesome walls, parthian climbing, manchester climbing centre, rope race, new mills tor, wimberry, tintwhistle knarr, black tor, hobson moor quarry, the woolpacks, derwent, stoney, stoney middleton, burbage, stanage, stanage plantation, higgar tor, froggatt, curbar, rubicon, raven tor, blackwell dale, bamford, windgather">
+	
+</head>
+
+<body>
+	<!------------------------------------------------------
+		HEADER/NAV
+	------------------------------------------------------>
+	<header>
+		<nav>
+			<div class="navContainer">
+
+				<!-- logo -->
+				<div class="navLogo">
+					<a href="index.html"><!--logo links to homepage-->
+						<img src="siteIcon.png" alt="logo" style="width: 50px;">
+					</a>
+				</div>
+
+				<!-- nav links -->
+				<div class="navLinks">
+
+					<div class="lineContainer">
+						<a href="index.html">Home</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="news_mostRecent.html">News</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="quiz.html">Quiz</a>
+						<div class="line"></div>
+					</div>
+
+					<div class="lineContainer">
+						<a href="sustainability.html">Sustainability</a>
+						<div class="line" style="z-index: 1; width: 80%;"></div>
+					</div>
+
+					<!--Ideas for future pages: Events, Discussion, Indoors, Outdoors, NewClimbers, Contact-->
+
+				</div>
+
+			</div>
+		</nav>
+	</header>	
+
+	<!------------------------------------------------------
+		MAIN
+	------------------------------------------------------>
+	<main>
+        <section class="sustFlex">
+
+            <h1>Sustainability in Climbing</h1>
+            
+            <p>What are the ways in which we can increase our sustainability as climbers? This page explores some of the ways in which you can reduce the impact that your passion for climbing places on the environment.</p>
+
+            <img src="brian-yurasits.jpg">
+
+            <div class="sustContent">
+                
+                <div class="sustText">
+                    <h2>How can we can be more sustainable outdoors?</h2>
+                    <ul>
+                        <li><strong>Leave No Trace - </strong> Following Leave No Trace principles is essential in minimising our impact on the environment. It's as simple as taking everything you brought (including rubbish) away with you, sticking to established footpaths, and respecting wildlife.</li><br>
+                        <li><strong>Gear From Recycled Materials -</strong> When it comes to gear, we can make a conscious choice to support eco-friendly options. Look for equipment made from recycled materials or can be recycled or repurposed at the end of its lifespan.</li><br>
+                        <li><strong>Conservation -</strong> Supporting organisations that work to protect climbing areas and the environment is a powerful way to make a difference. Research the local charities in your favourite climbing area and donate what you can or volunteer your time to participate in conservation efforts.</li><br>
+                        <li><strong>Transport -</strong> When travelling to the crag or to the gym, consider using public transport, carpooling or, where possible, biking. All these methods can reduce our emissions and minimise our environmental impact when compared to driving.</li><br>
+                    </ul>
+                    
+                </div>
+
+                <div class="sustImg">
+                    <img src="speckfechta.jpg">
+                </div>
+
+                <div class="sustBtn">
+                    <a href="https://www.theclimbinghangar.com/blog/climbing-sustainably-5-tips-for-being-an-eco-friendly-climber" target="_blank">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="sustContent">
+
+                <div class="sustImg" style="margin-right: 10px;">
+                    <img src="bady-abbas.jpg">
+                </div>                
+                
+                <div class="sustText">
+                    <h2>How can we can be more sustainable indoors?</h2>
+                    <ul>
+                        <li><strong>Facilities -</strong> Reusing and re-purposing buildings that would otherwise fall into disrepair, is a great way that climbing gyms can reduce the impact on the environment of building and opening new climbing gyms. Gyms can be mindful of the use of materials such as foam (boulder matting), rubber (rubber crumb floors) and plastic (holds) that are so crucial to our experience but have a high toxicity factor at production.</li><br>
+                        <li><strong>Consumables - </strong>The clothing we wear when climbing contributes to the clothing industry's extremely harmful effect on the environment. Patagonia, Prana, 3rd Rock are a sample of brands whose identity revolves around sustainability and positive impacts and you can further reduce your impact by buying second-hand. </li><br>
+                    </ul>
+                </div>
+
+                <div class="sustBtn">
+                    <a href="https://www.linkedin.com/pulse/sustainability-indoor-climbing-jez-tapping/" target="_blank">
+                        <button>Read More</button>
+                    </a>
+                </div>
+
+                
+            </div>
+
+        </section>
+    </main>
+
+    <main class="jsMain">
+
+        <section class="jsSection">
+
+            <img src="climber.jpg">
+
+            <!------------------- FORM 1 ------------------>
+            <div class="sustInput1">
+                <h3>How did you travel?</h3>
+                <p id="transportP"><i>choose an option</i></p>
+
+                <form name="form1">
+                    <fieldset>
+
+                        <input type="radio" name="transport" id="car" value="car" onclick="carFunc()">
+                        <label for="transport">I drove</label>
+                        <br>
+
+                        
+                        
+                        <input type="radio" name="transport" id="bus" value="bus" onclick="busFunc()">
+                        <label for="bus">I took Public Transport</label>
+                        <br>                        
+
+                        <input type="radio" name="transport" id="bike" value="bike" onclick="bikeFunc()">
+                        <label for="bike">I cycled</label>
+                        <br>                        
+
+                        <input type="radio" name="transport" id="pool" value="pool" onclick="poolFunc()">
+                        <label for="pool">I drove in a Car Pool</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <!------------------- FORM 2 ------------------>
+            <div class="sustInput2">
+                <h3>Have you made any Conservation Charity donations?</h3>
+                <p id="charityP"><i>choose an option</i></p>
+
+                <form name="form2">
+                    <fieldset>
+
+                        <input type="radio" name="charity" id="yes" value="yes"  onclick="yesFunc()">
+                        <label for="yes">Yes I've donated</label>
+                        <br>
+                        
+                        <input type="radio" name="charity" id="no" value="no" onclick="noFunc()">
+                        <label for="no">No I've not donated</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <!------------------- FORM 3 ------------------>
+            <div class="sustInput3">
+                <h3>How are your clothes sourced?</h3>
+                <p id="clothesP"><i>choose an option</i></p>
+
+                <form name="form3">
+                    <fieldset>
+
+                        <input type="radio" name="clothes" id="newClothes" value="newClothes" onclick="newClothesFunc()">
+                        <label for="newClothes">I bought them new</label>
+                        <br>
+                        
+                        <input type="radio" name="clothes" id="old" value="old" onclick="oldClothesFunc()">
+                        <label for="old">I bought them second-hand</label>
+                        <br>                        
+
+                        <input type="radio" name="clothes" id="recycledClothes" value="recycledClothes" onclick="recycledClothesFunc()">
+                        <label for="recycledClothes">I bought them from a sustainable company</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <!------------------- FORM 4 ------------------>
+            <div class="sustInput4">
+                <h3>Is your Indoor centre's building:</h3>
+                <p id="buildingP"><i>choose an option</i></p>
+
+                <form name="form4">
+                    <fieldset>
+
+                        <input type="radio" name="building" id="newBuild" value="newBuild" onclick="newBuildFunc()">
+                        <label for="newBuild">A new-build</label>
+                        <br>
+                        
+                        <input type="radio" name="building" id="warehouse" value="warehouse" onclick="warehouseFunc()">
+                        <label for="warehouse">A warehouse space</label>
+                        <br>                        
+
+                        <input type="radio" name="building" id="oldBuild" value="oldBuild" onclick="oldBuildFunc()">
+                        <label for="oldBuild">A re-purposed older building</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <!------------------- FORM 5 ------------------>
+            <div class="sustInput5">
+                <h3>What do you do when your shoes get worn out?</h3>
+                <p id="shoesP"><i>choose an option</i></p>
+
+                <form name="form5">
+                    <fieldset>
+
+                        <input type="radio" name="shoes" id="resole" value="resole" onclick="resoleFunc()">
+                        <label for="resole">I get them re-soled</label>
+                        <br>
+                        
+                        <input type="radio" name="shoes" id="newShoe" value="newShoe" onclick="newShoeFunc()">
+                        <label for="newShoe">I buy new ones</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <!------------------- FORM 6 ------------------>
+            <div class="sustInput6">
+                <h3>What do you do with your litter?</h3>
+                <p id="litterP"><i>choose an option</i></p>
+
+                <form name="form6">
+                    <fieldset>
+
+                        <input type="radio" name="litter" id="leave" value="leave" onclick="leaveFunc()">
+                        <label for="leave">I leave it</label>
+                        <br>
+                        
+                        <input type="radio" name="litter" id="take" value="take" onclick="takeFunc()">
+                        <label for="take">I take it home and bin it</label>
+                        <br>                        
+
+                        <input type="radio" name="litter" id="recycleLitter" value="recycleLitter" onclick="recycleLitterFunc()">
+                        <label for="recycleLitter">I take it home and recycle it</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <!------------------- FORM 7 ------------------>
+            <div class="sustInput7">
+                <h3>How is your gear sourced?</h3>
+                <p id="gearP"><i>choose an option</i></p>
+
+                <form name="form7">
+                    <fieldset>
+
+                        <input type="radio" name="gear" id="newGear" value="newGear" onclick="newGearFunc()">
+                        <label for="newGear">I buy new gear</label>
+                        <br>
+                        
+                        <input type="radio" name="gear" id="recycledGear" value="recycledGear" onclick="recycledGearFunc()">
+                        <label for="recycledGear">I buy new gear made with recycled materials</label>
+                        <br>                
+
+                        <input type="radio" name="gear" id="secondGear" value="secondGear" onclick="secondGearFunc()">
+                        <label for="secondGear">I buy almost new gear made with sustainable materials second-hand</label>
+                        <br>                
+
+                        <input type="radio" name="gear" id="oldGear" value="oldGear" onclick="oldGearFunc()">
+                        <label for="oldGear">I buy old and decrepit gear because I have no regard for my safety</label>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <div id="resultsBarH">
+                <h2>How sustainable are <i>you</i> as a climber?</h2>
+            </div>
+
+            <div class="resultsBarBackgroundDiv"></div>
+            <div id="resultsBarDiv"></div>
+            <p id="resultsBarResponse"></p>
+
+            <button class="submitBtn" onclick="submit()">Submit</button>
+
+
+        </section>
+
+    </main>
+   
+
+    <!---------------------------------------------------------
+		FOOTER
+	--------------------------------------------------------->
+
+	<footer>
+		<div class="footerContainer">
+
+			<p>Site By Jonathan Maxim</p>
+
+            <a href="attributions.html">
+                <p>Attributions</p>
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
